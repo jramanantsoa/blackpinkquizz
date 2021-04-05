@@ -116,7 +116,7 @@ $(document).ready(function () {
 
                 if (value == questions[currentQuestion].correctAnswer) {
                     correctAnswers++;
-                    console.log("true"+questions[currentQuestion].question);
+                    //console.log("true"+questions[currentQuestion].question);
                 }
 
                 currentQuestion++; // Since we have already displayed the first question on DOM ready
@@ -194,7 +194,7 @@ function hideScore() {
     $(document).find(".result").hide();
 }
 function checkAnswer(a){
-  console.log(a.id);
+  //console.log(a.id);
   id = "#"+a.id
 if(!$(id).is(":checked")){
     //remove all checked
