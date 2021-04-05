@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap');
+@modal-backdrop-bg:           red;
+
+.modal-content{
+    background-color: #262626;
+}
+.quizContainer{
+    position: absolute; /* or absolute */
+  top: 30%;
+    background-color:#F48FB1;
+    text-align: center;
+width: 100%;
+height : 400px;
+    margin: 0;
+    padding-left: 0px;
+}
+.child {
+    display: inline-block;  
+}
+li{
+    list-style-type: none;
+    height : 50px;
+    padding-top: 10px;
+    //transition: transform .5s;
+}
+.slidein {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-direction: alternate;
+}
+
+@keyframes slidein {
+  from {
+    margin-left:100%;
+    width:300%
+  }
+
+  to {
+    margin-left:0%;
+    width:100%;
+  }
+}
+
+.choiceList>ul>li{
+    font-size: 1.2em;
+    width: 200px;
+}
+.choiceList{
+        padding-left: 0px;
+
+}
+html { 
+  background: url(img/backgr.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+li:hover{
+   background: rgb(2,6,25);
+background: radial-gradient(circle, rgba(2,6,25,1) 0%, rgba(185,85,105,1) 100%);
+    color: aliceblue;
+    /*transform: scale(1);*/
+}
+.checked{
+      background-color: #262626;
+    color: aliceblue;
+}
+input[type="radio"]{
+    display:none;
+}
+.modal-content,{
+    background: #262626;
+}
+.mymodal{
+     background: url(img/lisa_blur.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
